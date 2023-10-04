@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Cookpal</title>
+    <link rel="shortcut icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQAfcdYmiCFxbaryndV_umPzbpssr6PByiXTJBsFX-q0w&s" type="image/x-icon">
     <link rel="stylesheet" href="style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -20,17 +21,26 @@
       <div class="logo"><img src="./image/cookpal_img.jpeg" alt="" /></div>
 
       <div class="nav-links">
-        <span class="highlight">Home</span>
-        <span>Explore</span>
-        <span>Help</span>
+        <nav>
+            <ul>
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#explore" class="nav-link">Explore</a></li>
+                <li><a href="#help" class="nav-link">Help</a></li>
+            </ul>
+        </nav>
       </div>
 
       <div><img src="./image/profile.svg" alt="" /></div>
     </nav>
 
-    <section class="hero">
+    <section class="hero" id="home">
       <div class="hero_image">
         <img src="./image/front.jpeg" alt="" />
+        <div class="carousel-text">
+            <h3 style="color:#DC582A;">Trending Now</h3>
+            <h1>Mike's famous salad with cheese</h1>
+            <p>By Ananya Kaushal</p>
+        </div>
       </div>
       <div class="text_hero">
         <img src="./image/18117.svg" alt="" />
@@ -40,7 +50,7 @@
     <div class="search_heading">Search For Recipes</div>
 
     <div class="search-container">
-      <span class="search-icon"><img src="./image/search 1.svg" alt="" /></span>
+      <span class="search-icon" id="explore"><img src="./image/search 1.svg" alt="" /></span>
       <input
         id="search_item"
         type="text"
@@ -87,7 +97,7 @@
       <div class="card_container" id="card_container"></div>
     </section>
 
-    <footer class="footer">
+    <footer class="footer" id="help">
       <div class="description">
         <img src="./image/cookpal_img.jpeg" alt="" />
 
